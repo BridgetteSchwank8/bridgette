@@ -1,0 +1,135 @@
+﻿* {
+    marging: 0;
+    padding: 0;
+    
+}
+.home {
+    min-height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url("https://media.licdn.com/dms/image/v2/D5616AQEse_CkXdJKkg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1677452213123?e=1737590400&v=beta&t=M9n0WkqJC7_QZM51zXgxij1Nh-PtdS5cU71I5mVzkQ0");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-items:center;
+    color: white;
+}
+.nav-links{
+    flex:1;
+    text-align:center;
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative;
+    
+}
+.nav-links ul li a{
+   color:white;
+   text-decoration:none;
+   font-size: 20px;
+}
+.nav-links ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        
+        background: #ffffff;
+        display: block;
+        margin: auto;
+        transition: 0.5s
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size:64px;
+}
+nav .fa{
+    display:none;
+}
+.about {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url("https://media.licdn.com/dms/image/v2/D5616AQEse_CkXdJKkg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1677452213123?e=1737590400&v=beta&t=M9n0WkqJC7_QZM51zXgxij1Nh-PtdS5cU71I5mVzkQ0");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about h1{
+    margin-top:100px;
+    font-size: 80px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.about-col{
+    flex-basis: 20%;
+    
+    padding: 20px 2px;
+}
+.about-col img {
+   width: 50%;
+        
+}
+.about-col h1{
+    padding-top:0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+
+
+@media(max-width: 70px){
+    .textbox h1{
+        font-size:20px;
+    }.nav link ul li{
+         display:block;
+     }
+     .nav-links{
+         position: absolute;
+         background: #fff;
+         height: 100vh;
+         width: 200px;
+         top:0;
+         right:-200px;
+         text-align:left;
+         z-index:2;
+         transition: 1s;
+
+     }
+     nav. fa{
+         display:block;
+         color: #fff;
+         margin: 10px;
+         font-size: 22px;
+         cursor: pointer;
+
+     }
+     .nav-links ul{
+         padding: 30px;
+     }
+    
+
+}
